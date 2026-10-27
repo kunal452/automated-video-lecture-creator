@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  lectura-studio:
+    build: .
+    container_name: lecturaai-studio
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - PORT=8000
+      - GEMINI_API_KEY=${GEMINI_API_KEY:-}
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+    volumes:
+      - ./storage:/app/storage

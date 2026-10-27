@@ -1,0 +1,22 @@
+# Microservices Architecture and Distributed Systems
+- Decomposing monolithic applications into independently deployable services
+- Bounded contexts, domain-driven design, and API contracts
+- Advantages in scaling teams, deployments, and fault isolation
+
+---
+# Inter-Service Communication Patterns
+- Synchronous communication: REST APIs, gRPC, and HTTP/2
+- Asynchronous event-driven communication: Apache Kafka, RabbitMQ
+- Resilience patterns: Circuit breakers, retries, and timeouts
+
+---
+# Data Consistency in Distributed Architectures
+- The fallacies of distributed computing and the CAP theorem
+- Eventual consistency over two-phase commits
+- The Saga pattern: Orchestration vs Choreography
+
+---
+# Observability & Production Monitoring
+- Distributed tracing with OpenTelemetry and Jaeger
+- Centralized logging and metrics aggregation (Prometheus & Grafana)
+- Health checks, canary deployments, and automated rollbacks

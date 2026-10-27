@@ -1,0 +1,53 @@
+{
+  "lecture_title": "Introduction to Convolutional Neural Networks",
+  "voice_profile": "en-US-ChristopherNeural",
+  "theme": "dark_modern",
+  "burn_subtitles": true,
+  "ken_burns_effect": false,
+  "slides": [
+    {
+      "index": 1,
+      "title": "Introduction to Convolutional Neural Networks",
+      "bullet_points": [
+        "Biological inspiration from mammalian visual cortex",
+        "Spatial locality and translation invariance principles",
+        "Key contrast with traditional Multi-Layer Perceptrons"
+      ],
+      "code_snippet": "import torch\nimport torch.nn as nn\n\n# Standard 2D Convolution\nconv = nn.Conv2d(\n    in_channels=3,\n    out_channels=16,\n    kernel_size=3,\n    stride=1,\n    padding=1\n)",
+      "spoken_script": "Welcome to today's module on Deep Learning. In this section, we explore Convolutional Neural Networks, or CNNs. Unlike standard feedforward neural networks that flatten image inputs, CNNs preserve spatial relationships across neighboring pixels using local receptive fields."
+    },
+    {
+      "index": 2,
+      "title": "Convolutional Filters & Feature Maps",
+      "bullet_points": [
+        "Kernels slide across the input matrix using 2D dot products",
+        "Early layers detect edges, lines, and gradients",
+        "Deeper layers assemble semantic objects and complex patterns"
+      ],
+      "code_snippet": "# Compute spatial output dimension\n# W_out = floor((W_in - K + 2*P) / S) + 1",
+      "spoken_script": "The core mathematical operation is the 2D cross-correlation filter. As kernels slide across the image, they extract hierarchical feature representations. Lower layers isolate basic edges, while deeper layers detect high-level semantic shapes."
+    },
+    {
+      "index": 3,
+      "title": "Pooling Layers and Downsampling",
+      "bullet_points": [
+        "Max Pooling: extracts highest-intensity activation per region",
+        "Average Pooling: calculates regional spatial mean",
+        "Reduces computational parameters and controls overfitting"
+      ],
+      "code_snippet": "pool = nn.MaxPool2d(kernel_size=2, stride=2)",
+      "spoken_script": "Following convolutional feature extraction, pooling layers progressively reduce the spatial dimensions of the representation. Max pooling preserves the most dominant features while substantially decreasing compute requirements."
+    },
+    {
+      "index": 4,
+      "title": "Summary & Practical Recommendations",
+      "bullet_points": [
+        "CNN architectures dominate computer vision tasks",
+        "Residual connections enable training of hundreds of layers",
+        "Next session: Transfer Learning with ResNet and Vision Transformers"
+      ],
+      "code_snippet": "",
+      "spoken_script": "To summarize, Convolutional Neural Networks revolutionized computer vision by drastically reducing parameter counts through weight sharing. In our upcoming session, we will examine Residual Networks and modern Vision Transformers. Thank you."
+    }
+  ]
+}
