@@ -12,6 +12,8 @@ license: mit
 # LecturaFlow — Automated Video Lecture Creator 🎓🎥
 > **Automated End-to-End AI Video Lecture Production System**
 
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/kunal452/automated-video-lecture-creator)
+
 An end-to-end automated platform that transforms raw academic notes, presentation slides (`.pptx`, `.pdf`), or simple topic prompts into professional 1080p video lectures with natural AI teacher narration, synchronized subtitles (`.srt`/`.vtt`), and slide transitions.
 
 ---
